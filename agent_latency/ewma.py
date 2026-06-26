@@ -51,7 +51,7 @@ def estimate_agent_latency(
     if not (max_sample_size > 0):
         return 0
     
-    valid_metrics = []
+    valid_metrics: List[float] = []
 
     # start calculating ewma from the oldest data point
     if newest_first:
